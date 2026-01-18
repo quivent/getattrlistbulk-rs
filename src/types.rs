@@ -6,9 +6,6 @@
 use crate::ffi;
 use std::time::SystemTime;
 
-// TODO: Task B - Implement types and conversions
-// See IMPLEMENTATION.md Task B for requirements
-
 /// Attributes to request for each directory entry.
 ///
 /// Set fields to `true` to request those attributes. Only requested

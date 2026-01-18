@@ -3,9 +3,6 @@
 //! This module provides the `DirEntries` iterator that lazily reads
 //! directory entries using getattrlistbulk.
 
-// TODO: Task D - Complete iterator implementation
-// See IMPLEMENTATION.md Task D for requirements
-
 use crate::error::Error;
 use crate::ffi;
 use crate::parser::BufferParser;

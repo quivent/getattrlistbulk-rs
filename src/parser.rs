@@ -20,10 +20,6 @@
 //! +------------------+
 //! ```
 
-// TODO: Task C - Implement buffer parser
-// See IMPLEMENTATION.md Task C for requirements
-// This is the CRITICAL PATH - most error-prone component
-
 use crate::error::ParseError;
 use crate::ffi;
 use crate::types::{DirEntry, ObjectType, RequestedAttributes};

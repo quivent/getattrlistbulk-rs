@@ -12,9 +12,6 @@
 
 use bitflags::bitflags;
 
-// TODO: Task A - Implement FFI declarations
-// See IMPLEMENTATION.md Task A for requirements
-
 /// Attribute list structure for getattrlistbulk
 #[repr(C)]
 pub struct attrlist {
