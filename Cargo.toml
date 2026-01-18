@@ -1,0 +1,32 @@
+[package]
+name = "getattrlistbulk"
+version = "0.1.0"
+edition = "2021"
+authors = ["Josh Kornreich"]
+license = "MIT OR Apache-2.0"
+description = "Safe Rust bindings for macOS getattrlistbulk() system call for high-performance directory enumeration"
+repository = "https://github.com/quivent/getattrlistbulk-rs"
+documentation = "https://docs.rs/getattrlistbulk"
+readme = "README.md"
+keywords = ["macos", "filesystem", "directory", "performance", "ffi"]
+categories = ["os::macos-apis", "filesystem", "api-bindings"]
+rust-version = "1.70"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+libc = "0.2"
+bitflags = "2.4"
+
+[dev-dependencies]
+tempfile = "3.10"
+criterion = "0.5"
+
+[features]
+default = []
+jwalk = []  # Future: integration with jwalk crate
+
+[[bench]]
+name = "traversal"
+harness = false
+
+[package.metadata.docs.rs]
+targets = ["x86_64-apple-darwin", "aarch64-apple-darwin"]
